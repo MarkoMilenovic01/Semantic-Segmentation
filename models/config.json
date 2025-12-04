@@ -1,0 +1,19 @@
+{
+  "optimizer": "Adam",
+  "lr": 0.0001,
+  "scheduler": "ReduceLROnPlateau",
+  "scheduler_params": {
+    "factor": 0.1,
+    "patience": 20,
+    "min_lr": 1e-06,
+    "mode": "min"
+  },
+  "loss": "BCEWithLogitsLoss",
+  "epochs": 150,
+  "batch_size": 32,
+  "train_samples": 4000,
+  "val_samples": 500,
+  "img_size": 256,
+  "device": "cuda",
+  "amp": true
+}
